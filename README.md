@@ -10,7 +10,7 @@ Features:
  * Get all open orders
  * Create a shipment for an order
 
-Bol.com requires you to use their carrier codes. See: [this page](https://developers.bol.com/documentatie/plaza-api/developer-guide-plaza-api/appendix-a-transporters/) or the source code for the available options. 
+Bol.com requires you to use their carrier codes. See: [this page](https://developers.bol.com/documentatie/plaza-api/developer-guide-plaza-api/appendix-a-transporters/) or the source code for the available options. The plugin also throws an exception if you use an unsupported one.
 
 Basic usage:
 
