@@ -31,7 +31,7 @@ try{
     print_r($orders);
 
     // Or get 1 order
-    $order = PlazaOrder::find($client, '123');
+    $order = PlazaOrder::find($client, '<orderId>');
     // And ship it
     $order->ship('TNT', '3S283892138213798');
     print_r($order);
