@@ -1,0 +1,21 @@
+{
+    "name": "mcs/bol-plaza",
+    "description": "Interact with the Bol.com Plaza API",
+    "license": "MIT",
+    "keywords": ["Bol.com", "Bol.com api", "Plaza api", "Bol.com Plaza Api"],
+    "authors": [
+        {
+            "name": "Michiel Meertens",
+            "email": "meertensmichiel28@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "MCS\\": "src"
+        }
+    }
+}
