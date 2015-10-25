@@ -123,6 +123,14 @@ class PlazaOrder{
     }
     
     /**
+     * @param array $array
+     * @return bool
+     */
+    public static function is_assoc(array $array) {
+      return (bool)count(array_filter(array_keys($array), 'is_string'));
+    }
+    
+    /**
      * @param array $order
      * @param object PlazaCLient $client
      */
@@ -160,7 +168,12 @@ class PlazaOrder{
         $this->shippingAddress = array_merge($addressStructure, $order['Buyer']['ShipmentDetails']);
         $this->billingAddress = array_merge($addressStructure, $order['Buyer']['BillingDetails']);
             
-        foreach($order['OpenOrderItems'] as $line){
+        $key = $order['OpenOrderItems'];
+        if (!PlazaOrder::is_assoc($order['OpenOrderItems']['OpenOrderItem'])){
+            $key = $order['OpenOrderItems']['OpenOrderItem'];
+        }
+        
+        foreach($key as $line){
             $this->orderLines[] = [
                 'id' => (int) $line['OrderItemId'],
                 'quantity' => (int) $line['Quantity'],
