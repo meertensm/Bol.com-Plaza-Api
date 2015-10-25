@@ -178,7 +178,7 @@ class PlazaOrder{
                 'id' => (int) $line['OrderItemId'],
                 'quantity' => (int) $line['Quantity'],
                 'ean' => $line['EAN'],
-                'sku' => ( isset($line['ReferenceCode']) ? $line['ReferenceCode'] : null ),
+                'sku' => ( isset($line['ReferenceCode']) ? $line['ReferenceCode'] : $line['EAN'] ),
                 'name' => $line['Title'],
                 'price' => number_format($line['Price'], 2)
             ];
