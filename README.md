@@ -1,4 +1,4 @@
-# Bol.com Plaza API Client
+# Bol.com Plaza API Client 
 [![Latest Stable Version](https://poser.pugx.org/mcs/bol-plaza/v/stable)](https://packagist.org/packages/mcs/bol-plaza) [![Total Downloads](https://poser.pugx.org/mcs/bol-plaza/downloads)](https://packagist.org/packages/mcs/bol-plaza) [![Latest Unstable Version](https://poser.pugx.org/mcs/bol-plaza/v/unstable)](https://packagist.org/packages/mcs/bol-plaza) [![License](https://poser.pugx.org/mcs/bol-plaza/license)](https://packagist.org/packages/mcs/bol-plaza)
 
 Installation:
